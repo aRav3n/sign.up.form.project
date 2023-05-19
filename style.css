@@ -1,10 +1,53 @@
+a {
+    color: inherit;
+}
+
 #banner,
 #content_wrapper {
-    width: auto;
+    height: 100vh;
+    min-height: 300px;
+    min-width: 200px;
+}
+
+#banner {
+    background: no-repeat 50% 50% / cover url("marita-kavelashvili-ugnrXk1129g-unsplash.jpg");
+    flex: 1 1 35vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#banner > p {
+    background-color: #1f332bba;
+    bottom: 0;
+    border-radius: .5rem;
+    color: #ECECEC;
+    margin: .25rem;
+    padding: .5rem;
+    position: absolute;
+}
+
+#content_wrapper {
+    background-color: pink;
+    flex: 1 1 65vw;
 }
 
 body {
-    display: flex;
+    align-items: stretch;
+    flex: 1 1 auto;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
+body,
+div,
+html {
+    display: flex;
+}
+
+html {
+    min-height: 100vh;
+    width: 100vw;
+}
