@@ -1,0 +1,10 @@
+#banner,
+#content_wrapper {
+    width: auto;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
