@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
     color: inherit;
 }
@@ -6,7 +15,7 @@ a {
 #content_wrapper {
     height: 100vh;
     min-height: 300px;
-    min-width: 200px;
+    min-width: 240px;
 }
 
 #banner {
@@ -16,23 +25,41 @@ a {
     justify-content: center;
 }
 
-#banner > p {
-    background-color: #1f332bba;
-    bottom: 0;
-    border-radius: .5rem;
-    color: #ECECEC;
-    margin: .25rem;
-    padding: .5rem;
-    position: absolute;
+#banner > div {
+    align-self: center;
+    align-items: center;
+    background-color: #0000004d;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    width: 100%;
 }
 
-#content_wrapper {
-    background-color: pink;
-    flex: 1 1 65vw;
+#banner > div > img {
+    height: 100px;
+    width: auto;
+}
+
+#banner > div > p {
+    color: white;
+    font-family: "norsebold" ,Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    margin: 0;
+}
+
+#banner > p {
+    align-self: flex-end;
+    background-color: #1f332bba;
+    border-radius: .5rem;
+    color: #ECECEC;
+    height: fit-content;
+    margin: .25rem;
+    padding: .5rem;
 }
 
 body {
-    align-items: stretch;
+    align-items: center;
     flex: 1 1 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,11 +70,40 @@ body {
 
 body,
 div,
-html {
+fieldset,
+html,
+label {
     display: flex;
+    font: inherit;
+}
+
+#content_wrapper {
+    color: #1F2937;
+    justify-content: space-evenly;
+    flex: 1 1 65vw;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content_wrapper > div {
+    flex-direction: column;
+    padding: 0 3vw 0 3vw;
+}
+
+fieldset {
+    border: none;
+    gap: 2vw
+}
+
+h2 {
 }
 
 html {
     min-height: 100vh;
     width: 100vw;
+}
+
+label {
+    flex-direction: column;
+    font-size: small;
 }
