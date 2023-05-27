@@ -29,25 +29,48 @@
             </p>
             <p>You <em>know</em> you want to.</p>
         </div>
+        <form action="" method="post" id="signupform">
+            <h2>Let's do this!</h2>
+            <fieldset>
+                <label for="firstname">
+                    FIRST NAME
+                    <input type="text" id="firstname" name="firstname">
+                    <span></span>
+                </label>
+                <label for="lastname">
+                    LAST NAME
+                    <input type="text" id="lastname" name="lastname">
+                    <span></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="email">
+                    EMAIL
+                    <input type="email" id="email" name="email">
+                    <span></span>
+                </label>
+                <label for="phone">
+                    PHONE NUMBER
+                    <input type="tel" id="phone" name="phone">
+                    <span></span>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="pw">
+                    PASSWORD
+                    <input type="password" id="pw" name="pw">
+                    <span></span>
+                </label>
+                <label for="pwconfirm">
+                    CONFIRM PASSWORD
+                    <input type="password" id="pwconfirm" name="pwconfirm">
+                    <span></span>
+                </label>
+            </fieldset>
+        </form>
         <div>
-            <form action="" method="post">
-                <h2>Let's do this!</h2>
-                <fieldset>
-                    <label for="firstname">FIRST NAME<input type="text" id="firstname" name="firstname"></label>
-                    <label for="lastname">LAST NAME<input type="text" id="lastname" name="lastname"></label>
-                </fieldset>
-                <fieldset>
-                    <label for="email">EMAIL<input type="email" id="email" name="email"></label>
-                    <label for="phone">PHONE NUMBER<input type="tel" id="phone" name="phone"></label>
-                </fieldset>
-                <fieldset>
-                    <label for="pw">PASSWORD<input type="password" id="pw" name="pw"></label>
-                    <label for="pwconfirm">CONFIRM PASSWORD<input type="password" id="pwconfirm" name="pwconfirm"></label>
-                </fieldset>
-            </form>
-        </div>
-        <div>
-            <button type="submit">Create Account</button>
+            <button type="submit" form="signupform">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
         </div>
     </div>
 </body>
