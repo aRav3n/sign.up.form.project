@@ -1,3 +1,7 @@
+input {
+    appearance: none;
+}
+
 @font-face {
     font-family: 'norsebold';
     src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
@@ -122,6 +126,7 @@ form {
 
 fieldset {
     border: none;
+    flex-wrap: wrap;
     gap: 2vw;
     padding: 0;
 }
